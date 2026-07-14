@@ -6,7 +6,11 @@ box-sizing:border-box;
 
 body{
 font-family:Inter,sans-serif;
-background:"file_0000000021cc720a8434f86a5008b577.png".png;
+background-image: url("file_0000000021cc720a8434f86a5008b577.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
 color:white;
 overflow-x:hidden;
 }
