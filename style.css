@@ -131,46 +131,69 @@ border-top:1px solid #222;
 color:#888;
 }
 .contract-box{
-margin-top:40px;
+margin:45px auto 0;
 padding:25px;
-background:rgba(0,0,0,.45);
+width:100%;
+max-width:760px;
+background:rgba(10,15,10,.75);
 border:2px solid #19d37e;
-border-radius:20px;
-backdrop-filter:blur(8px);
-max-width:700px;
-margin-left:auto;
-margin-right:auto;
-box-shadow:0 0 20px rgba(25,211,126,.3);
+border-radius:18px;
+box-shadow:0 0 30px rgba(25,211,126,.35);
+text-align:center;
 }
 
 .contract-box h3{
-margin-bottom:15px;
-font-size:30px;
 font-family:Cinzel,serif;
+font-size:28px;
+margin-bottom:18px;
 color:#19d37e;
-text-align:center;
 }
 
 .contract-row{
 display:flex;
-justify-content:center;
 align-items:center;
-gap:15px;
-flex-wrap:wrap;
+justify-content:center;
+gap:12px;
 }
 
 .contract-row input{
-flex:1;
-min-width:260px;
-padding:16px;
-border-radius:12px;
+width:100%;
+padding:15px;
+background:#0f0f0f;
 border:2px solid #19d37e;
-background:#111;
+border-radius:12px;
 color:#fff;
-font-size:16px;
-text-align:center;
+font-size:15px;
+outline:none;
 }
 
 .copy-btn{
-padding:16px 28px;
+padding:15px 24px;
+background:#19d37e;
+border:none;
+border-radius:12px;
+color:#000;
+font-weight:700;
+cursor:pointer;
+white-space:nowrap;
 }
+
+.copy-btn:hover{
+background:#27f59a;
+}
+
+@media(max-width:768px){
+
+.contract-row{
+flex-direction:column;
+}
+
+.contract-row input{
+width:100%;
+}
+
+.copy-btn{
+width:100%;
+}
+
+  }
