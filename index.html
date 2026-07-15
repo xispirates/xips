@@ -4,15 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Xi's Pirates (XIPS)</title>
+<title>XIPS | Xi's Pirates</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -21,48 +19,52 @@
 
 <header>
 
+<div class="logo">
 <h1>XIPS</h1>
+</div>
 
 <nav>
 
-<a href="#">Home</a>
-
+<a href="#home">Home</a>
 <a href="#about">About</a>
-
-<a href="#roadmap">Roadmap</a>
-
 <a href="#tokenomics">Tokenomics</a>
+<a href="#roadmap">Roadmap</a>
+<a href="#faq">FAQ</a>
+
+<select id="language">
+
+<option value="en">🇺🇸 English</option>
+<option value="ru">🇷🇺 Русский</option>
+<option value="zh">🇨🇳 中文</option>
+<option value="ar">🇸🇦 العربية</option>
+<option value="es">🇪🇸 Español</option>
+<option value="fr">🇫🇷 Français</option>
+
+</select>
 
 </nav>
 
 </header>
 
-<section class="hero">
+<section id="home" class="hero">
 
 <div class="hero-content">
 
-<h2>Xi's Pirates</h2>
+<h2>XI'S PIRATES</h2>
 
 <p>
-Chart Your Course.
-Own The Treasure.
+Community Driven Meme Token
+Powered By The Sea Of Crypto
 </p>
 
-<div class="buttons">
-
-<a href="https://t.me/XisPirates" class="btn">
-Telegram
-</a>
-
-<a href="https://x.com/XisPirates" class="btn">
-X
+<a href="#" class="btn">
+BUY XIPS
 </a>
 
 <a href="#" class="btn gold">
-Buy XIPS
+CONTRACT
+COMING SOON
 </a>
-
-</div>
 
 </div>
 
@@ -70,12 +72,10 @@ Buy XIPS
 
 <section id="about">
 
-<h2>About</h2>
+<h2>About XIPS</h2>
 
 <p>
-
-Xi's Pirates is a community driven crypto project inspired by legendary pirates, hidden treasure and fearless explorers.
-
+Xi's Pirates (XIPS) is a community-driven meme token inspired by pirates, freedom, and the endless sea of crypto. Built for holders who believe strong communities create lasting value.
 </p>
 
 </section>
@@ -87,35 +87,23 @@ Xi's Pirates is a community driven crypto project inspired by legendary pirates,
 <div class="cards">
 
 <div class="card">
-
 <h3>Total Supply</h3>
-
-<p>Coming Soon</p>
-
+<p>1,000,000,000 XIPS</p>
 </div>
 
 <div class="card">
-
 <h3>Tax</h3>
-
 <p>0%</p>
-
 </div>
 
 <div class="card">
-
 <h3>Liquidity</h3>
-
 <p>Locked</p>
-
 </div>
 
 <div class="card">
-
-<h3>Community</h3>
-
-<p>100%</p>
-
+<h3>Ownership</h3>
+<p>Renounced</p>
 </div>
 
 </div>
@@ -128,13 +116,50 @@ Xi's Pirates is a community driven crypto project inspired by legendary pirates,
 
 <div class="timeline">
 
-<div>Website</div>
+<div>
+<h3>Phase 1</h3>
+<p>Launch Website</p>
+</div>
 
-<div>Launch</div>
+<div>
+<h3>Phase 2</h3>
+<p>Launch Token</p>
+</div>
 
-<div>Community</div>
+<div>
+<h3>Phase 3</h3>
+<p>Community Growth</p>
+</div>
 
-<div>Listings</div>
+<div>
+<h3>Phase 4</h3>
+<p>CEX Listings</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="faq">
+
+<h2>FAQ</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Contract</h3>
+<p>Coming Soon</p>
+</div>
+
+<div class="card">
+<h3>Blockchain</h3>
+<p>Solana</p>
+</div>
+
+<div class="card">
+<h3>Community</h3>
+<p>X & Telegram</p>
+</div>
 
 </div>
 
@@ -142,12 +167,107 @@ Xi's Pirates is a community driven crypto project inspired by legendary pirates,
 
 <footer>
 
-© 2026 Xi's Pirates (XIPS)
+<p>© 2026 Xi's Pirates (XIPS). All Rights Reserved.</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+nav{
+display:flex;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+#language{
+padding:10px 15px;
+border:none;
+border-radius:10px;
+background:#111;
+color:#fff;
+cursor:pointer;
+outline:none;
+}
+
+.hero-content{
+max-width:850px;
+}
+
+.hero h2{
+font-size:72px;
+font-weight:900;
+text-shadow:0 0 25px rgba(0,255,150,.5);
+}
+
+.hero p{
+max-width:700px;
+margin:0 auto 35px;
+line-height:1.7;
+}
+
+.hero .btn{
+margin:10px;
+}
+
+h2{
+text-align:center;
+font-size:42px;
+margin-bottom:30px;
+color:#33ff99;
+font-family:Cinzel,serif;
+}
+
+section p{
+line-height:1.8;
+font-size:18px;
+}
+
+.card:hover,
+.timeline div:hover{
+transform:translateY(-8px);
+transition:.3s;
+box-shadow:0 0 25px rgba(0,255,140,.25);
+}
+
+footer p{
+font-size:15px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav{
+justify-content:center;
+}
+
+.hero h2{
+font-size:48px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+h2{
+font-size:34px;
+}
+
+.cards,
+.timeline{
+grid-template-columns:1fr;
+}
+
+}
