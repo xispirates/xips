@@ -230,3 +230,45 @@ text-decoration:none;
 nav.show{
 display:block;
 }
+.menu-btn{
+font-size:34px;
+color:#33ff99;
+cursor:pointer;
+display:none;
+}
+
+.mobile-menu{
+display:flex;
+gap:25px;
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+.mobile-menu{
+display:none;
+position:absolute;
+top:75px;
+right:20px;
+background:#111;
+border:2px solid #19d37e;
+border-radius:15px;
+padding:15px;
+flex-direction:column;
+z-index:999;
+}
+
+.mobile-menu.show{
+display:flex;
+}
+
+.mobile-menu a{
+margin:8px 0;
+color:#fff;
+text-decoration:none;
+}
+
+}
