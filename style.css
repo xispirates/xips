@@ -197,3 +197,36 @@ width:100%;
 }
 
   }
+.menu-btn{
+font-size:34px;
+cursor:pointer;
+color:#fff;
+user-select:none;
+}
+
+header{
+position:relative;
+}
+
+nav{
+display:none;
+position:absolute;
+top:70px;
+right:20px;
+background:rgba(0,0,0,.95);
+border:1px solid #19d37e;
+border-radius:15px;
+padding:15px;
+min-width:180px;
+}
+
+nav a{
+display:block;
+margin:12px 0;
+color:#fff;
+text-decoration:none;
+}
+
+nav.show{
+display:block;
+}
