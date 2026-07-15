@@ -44,7 +44,7 @@
 <h2>Xi's Pirates</h2>
 
 <p>
-Chart Your Course.
+Chart Your Course.<br>
 Own The Treasure.
 </p>
 
@@ -68,15 +68,21 @@ Buy XIPS
 
 <h3>Contract Address</h3>
 
+<div class="contract-row">
+
 <input
 type="text"
 id="contract"
-value="comingsoon"
+value="COMING SOON"
 readonly>
 
-<button class="btn" onclick="navigator.clipboard.writeText(document.getElementById('contract').value)">
+<button
+class="btn copy-btn"
+onclick="navigator.clipboard.writeText(document.getElementById('contract').value)">
 📋 Copy
 </button>
+
+</div>
 
 </div>
 
@@ -103,35 +109,23 @@ Xi's Pirates is a community driven crypto project inspired by legendary pirates,
 <div class="cards">
 
 <div class="card">
-
 <h3>Total Supply</h3>
-
 <p>Coming Soon</p>
-
 </div>
 
 <div class="card">
-
 <h3>Tax</h3>
-
 <p>0%</p>
-
 </div>
 
 <div class="card">
-
 <h3>Liquidity</h3>
-
 <p>Locked</p>
-
 </div>
 
 <div class="card">
-
 <h3>Community</h3>
-
 <p>100%</p>
-
 </div>
 
 </div>
@@ -145,11 +139,8 @@ Xi's Pirates is a community driven crypto project inspired by legendary pirates,
 <div class="timeline">
 
 <div>Website</div>
-
 <div>Launch</div>
-
 <div>Community</div>
-
 <div>Listings</div>
 
 </div>
@@ -165,5 +156,4 @@ Xi's Pirates is a community driven crypto project inspired by legendary pirates,
 <script src="script.js"></script>
 
 </body>
-
 </html>
