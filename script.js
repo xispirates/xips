@@ -64,3 +64,6 @@ document.querySelectorAll(".btn").forEach(btn => {
   });
 
 });
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
