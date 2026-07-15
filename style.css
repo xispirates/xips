@@ -6,11 +6,7 @@ box-sizing:border-box;
 
 body{
 font-family:Inter,sans-serif;
-background-image: url("file_0000000021cc720a8434f86a5008b577.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
+background:#050505;
 color:white;
 overflow-x:hidden;
 }
@@ -26,20 +22,6 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 z-index:-2;
-}
-.background::before{
-content:"";
-position:absolute;
-width:200%;
-height:200%;
-background:url("https://www.transparenttextures.com/patterns/cloudy.png");
-opacity:.08;
-animation:clouds 60s linear infinite;
-}
-
-@keyframes clouds{
-from{transform:translateX(0);}
-to{transform:translateX(-50%);}
 }
 
 header{
